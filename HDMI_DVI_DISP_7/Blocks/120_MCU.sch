@@ -1,0 +1,778 @@
+EESchema Schematic File Version 4
+LIBS:HDMI_DVI_DISP_7-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date "2021-04-14"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Crystal Y?
+U 1 1 60FDD644
+P 950 850
+F 0 "Y?" H 950 1118 50  0000 C CNN
+F 1 "8MHz" H 950 1027 50  0000 C CNN
+F 2 "" H 950 850 50  0001 C CNN
+F 3 "~" H 950 850 50  0001 C CNN
+	1    950  850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60FFEAEF
+P 7050 4300
+F 0 "#PWR?" H 7050 4050 50  0001 C CNN
+F 1 "GNDD" H 7054 4145 50  0000 C CNN
+F 2 "" H 7050 4300 50  0001 C CNN
+F 3 "" H 7050 4300 50  0001 C CNN
+	1    7050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 607DE65E
+P 1850 6950
+AR Path="/60773BC4/607DE65E" Ref="FB?"  Part="1" 
+AR Path="/60773D2C/607DE65E" Ref="FB?"  Part="1" 
+F 0 "FB?" V 1576 6950 50  0000 C CNN
+F 1 "Ferrite_Bead" V 1667 6950 50  0000 C CNN
+F 2 "" V 1780 6950 50  0001 C CNN
+F 3 "~" H 1850 6950 50  0001 C CNN
+	1    1850 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607DE664
+P 2200 7150
+AR Path="/60773BC4/607DE664" Ref="C?"  Part="1" 
+AR Path="/60773D2C/607DE664" Ref="C?"  Part="1" 
+F 0 "C?" H 2315 7196 50  0000 L CNN
+F 1 "22u" H 2315 7105 50  0000 L CNN
+F 2 "" H 2238 7000 50  0001 C CNN
+F 3 "~" H 2200 7150 50  0001 C CNN
+	1    2200 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6950 2200 6950
+Wire Wire Line
+	2200 6950 2200 7000
+$Comp
+L power:GNDD #PWR?
+U 1 1 607DE66C
+P 2200 7350
+AR Path="/60773BC4/607DE66C" Ref="#PWR?"  Part="1" 
+AR Path="/60773D2C/607DE66C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2200 7100 50  0001 C CNN
+F 1 "GNDD" H 2204 7195 50  0000 C CNN
+F 2 "" H 2200 7350 50  0001 C CNN
+F 3 "" H 2200 7350 50  0001 C CNN
+	1    2200 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 7350 2200 7300
+Connection ~ 2200 6950
+$Comp
+L Device:C C?
+U 1 1 607DE675
+P 2600 7150
+AR Path="/60773BC4/607DE675" Ref="C?"  Part="1" 
+AR Path="/60773D2C/607DE675" Ref="C?"  Part="1" 
+F 0 "C?" H 2715 7196 50  0000 L CNN
+F 1 "68n" H 2715 7105 50  0000 L CNN
+F 2 "" H 2638 7000 50  0001 C CNN
+F 3 "~" H 2600 7150 50  0001 C CNN
+	1    2600 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 6950 2600 6950
+Wire Wire Line
+	2600 7000 2600 6950
+Connection ~ 2600 6950
+$Comp
+L power:GNDD #PWR?
+U 1 1 607DE67F
+P 2600 7350
+AR Path="/60773BC4/607DE67F" Ref="#PWR?"  Part="1" 
+AR Path="/60773D2C/607DE67F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 7100 50  0001 C CNN
+F 1 "GNDD" H 2604 7195 50  0000 C CNN
+F 2 "" H 2600 7350 50  0001 C CNN
+F 3 "" H 2600 7350 50  0001 C CNN
+	1    2600 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7350 2600 7300
+Text Label 4250 6950 0    50   ~ 0
+P_STM_3V3
+Text HLabel 1450 6950 0    50   Input ~ 0
+P_SMPS_3V3
+Wire Wire Line
+	1450 6950 1700 6950
+Wire Wire Line
+	3800 6950 4200 6950
+$Comp
+L Device:C C?
+U 1 1 607E4A45
+P 3000 7150
+AR Path="/60773BC4/607E4A45" Ref="C?"  Part="1" 
+AR Path="/60773D2C/607E4A45" Ref="C?"  Part="1" 
+F 0 "C?" H 3115 7196 50  0000 L CNN
+F 1 "68n" H 3115 7105 50  0000 L CNN
+F 2 "" H 3038 7000 50  0001 C CNN
+F 3 "~" H 3000 7150 50  0001 C CNN
+	1    3000 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607E5CC8
+P 3400 7150
+AR Path="/60773BC4/607E5CC8" Ref="C?"  Part="1" 
+AR Path="/60773D2C/607E5CC8" Ref="C?"  Part="1" 
+F 0 "C?" H 3515 7196 50  0000 L CNN
+F 1 "68n" H 3515 7105 50  0000 L CNN
+F 2 "" H 3438 7000 50  0001 C CNN
+F 3 "~" H 3400 7150 50  0001 C CNN
+	1    3400 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607E5CCE
+P 3800 7150
+AR Path="/60773BC4/607E5CCE" Ref="C?"  Part="1" 
+AR Path="/60773D2C/607E5CCE" Ref="C?"  Part="1" 
+F 0 "C?" H 3915 7196 50  0000 L CNN
+F 1 "68n" H 3915 7105 50  0000 L CNN
+F 2 "" H 3838 7000 50  0001 C CNN
+F 3 "~" H 3800 7150 50  0001 C CNN
+	1    3800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 607EA79D
+P 4200 7150
+AR Path="/60773BC4/607EA79D" Ref="C?"  Part="1" 
+AR Path="/60773D2C/607EA79D" Ref="C?"  Part="1" 
+F 0 "C?" H 4315 7196 50  0000 L CNN
+F 1 "68n" H 4315 7105 50  0000 L CNN
+F 2 "" H 4238 7000 50  0001 C CNN
+F 3 "~" H 4200 7150 50  0001 C CNN
+	1    4200 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 7000 4200 6950
+Wire Wire Line
+	4200 6950 4250 6950
+Connection ~ 4200 6950
+Wire Wire Line
+	3800 7000 3800 6950
+Wire Wire Line
+	3400 7000 3400 6950
+Wire Wire Line
+	3400 6950 3800 6950
+Connection ~ 3800 6950
+Wire Wire Line
+	3000 7000 3000 6950
+Wire Wire Line
+	3000 6950 3400 6950
+Connection ~ 3400 6950
+Wire Wire Line
+	2600 6950 3000 6950
+Connection ~ 3000 6950
+$Comp
+L power:GNDD #PWR?
+U 1 1 607F4692
+P 3000 7350
+AR Path="/60773BC4/607F4692" Ref="#PWR?"  Part="1" 
+AR Path="/60773D2C/607F4692" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3000 7100 50  0001 C CNN
+F 1 "GNDD" H 3004 7195 50  0000 C CNN
+F 2 "" H 3000 7350 50  0001 C CNN
+F 3 "" H 3000 7350 50  0001 C CNN
+	1    3000 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 607F494D
+P 3400 7350
+AR Path="/60773BC4/607F494D" Ref="#PWR?"  Part="1" 
+AR Path="/60773D2C/607F494D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 7100 50  0001 C CNN
+F 1 "GNDD" H 3404 7195 50  0000 C CNN
+F 2 "" H 3400 7350 50  0001 C CNN
+F 3 "" H 3400 7350 50  0001 C CNN
+	1    3400 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 607F4AFD
+P 3800 7350
+AR Path="/60773BC4/607F4AFD" Ref="#PWR?"  Part="1" 
+AR Path="/60773D2C/607F4AFD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3800 7100 50  0001 C CNN
+F 1 "GNDD" H 3804 7195 50  0000 C CNN
+F 2 "" H 3800 7350 50  0001 C CNN
+F 3 "" H 3800 7350 50  0001 C CNN
+	1    3800 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 607F4E27
+P 4200 7350
+AR Path="/60773BC4/607F4E27" Ref="#PWR?"  Part="1" 
+AR Path="/60773D2C/607F4E27" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4200 7100 50  0001 C CNN
+F 1 "GNDD" H 4204 7195 50  0000 C CNN
+F 2 "" H 4200 7350 50  0001 C CNN
+F 3 "" H 4200 7350 50  0001 C CNN
+	1    4200 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 7350 4200 7300
+Wire Wire Line
+	3800 7350 3800 7300
+Wire Wire Line
+	3400 7350 3400 7300
+Wire Wire Line
+	3000 7350 3000 7300
+$Comp
+L Device:R R?
+U 1 1 607FCD9A
+P 1800 1650
+F 0 "R?" V 1593 1650 50  0000 C CNN
+F 1 "1k" V 1684 1650 50  0000 C CNN
+F 2 "" V 1730 1650 50  0001 C CNN
+F 3 "~" H 1800 1650 50  0001 C CNN
+	1    1800 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	700  850  800  850 
+$Comp
+L Device:C C?
+U 1 1 6081917F
+P 1200 1050
+F 0 "C?" H 1315 1096 50  0000 L CNN
+F 1 "10p" H 1315 1005 50  0000 L CNN
+F 2 "" H 1238 900 50  0001 C CNN
+F 3 "~" H 1200 1050 50  0001 C CNN
+	1    1200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60819C25
+P 1200 1450
+F 0 "C?" H 1315 1496 50  0000 L CNN
+F 1 "10p" H 1315 1405 50  0000 L CNN
+F 2 "" H 1238 1300 50  0001 C CNN
+F 3 "~" H 1200 1450 50  0001 C CNN
+	1    1200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  1650 1200 1650
+Wire Wire Line
+	1200 1650 1200 1600
+Wire Wire Line
+	700  850  700  1650
+Wire Wire Line
+	1200 1300 1200 1250
+Wire Wire Line
+	1650 1650 1200 1650
+Connection ~ 1200 1650
+Wire Wire Line
+	1950 1650 2100 1650
+Wire Wire Line
+	1100 850  1200 850 
+Wire Wire Line
+	1200 900  1200 850 
+Connection ~ 1200 850 
+Wire Wire Line
+	1200 850  2100 850 
+$Comp
+L power:GNDD #PWR?
+U 1 1 60826DD3
+P 1500 1250
+F 0 "#PWR?" H 1500 1000 50  0001 C CNN
+F 1 "GNDD" H 1504 1095 50  0000 C CNN
+F 2 "" H 1500 1250 50  0001 C CNN
+F 3 "" H 1500 1250 50  0001 C CNN
+	1    1500 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 1250 1200 1250
+Connection ~ 1200 1250
+Wire Wire Line
+	1200 1250 1200 1200
+Text Label 2100 850  0    50   ~ 0
+AI_MCU_OSC_IN
+Text Label 2100 1650 0    50   ~ 0
+AO_MCU_OSC_OUT
+$Comp
+L Device:Crystal Y?
+U 1 1 6083094D
+P 950 2100
+F 0 "Y?" H 950 2368 50  0000 C CNN
+F 1 "32.678kHz" H 950 2277 50  0000 C CNN
+F 2 "" H 950 2100 50  0001 C CNN
+F 3 "~" H 950 2100 50  0001 C CNN
+	1    950  2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60830953
+P 1800 2900
+F 0 "R?" V 1593 2900 50  0000 C CNN
+F 1 "1k" V 1684 2900 50  0000 C CNN
+F 2 "" V 1730 2900 50  0001 C CNN
+F 3 "~" H 1800 2900 50  0001 C CNN
+	1    1800 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	700  2100 800  2100
+$Comp
+L Device:C C?
+U 1 1 6083095A
+P 1200 2300
+F 0 "C?" H 1315 2346 50  0000 L CNN
+F 1 "10p" H 1315 2255 50  0000 L CNN
+F 2 "" H 1238 2150 50  0001 C CNN
+F 3 "~" H 1200 2300 50  0001 C CNN
+	1    1200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60830960
+P 1200 2700
+F 0 "C?" H 1315 2746 50  0000 L CNN
+F 1 "10p" H 1315 2655 50  0000 L CNN
+F 2 "" H 1238 2550 50  0001 C CNN
+F 3 "~" H 1200 2700 50  0001 C CNN
+	1    1200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  2900 1200 2900
+Wire Wire Line
+	1200 2900 1200 2850
+Wire Wire Line
+	700  2100 700  2900
+Wire Wire Line
+	1200 2550 1200 2500
+Wire Wire Line
+	1650 2900 1200 2900
+Connection ~ 1200 2900
+Wire Wire Line
+	1950 2900 2100 2900
+Wire Wire Line
+	1100 2100 1200 2100
+Wire Wire Line
+	1200 2150 1200 2100
+Connection ~ 1200 2100
+Wire Wire Line
+	1200 2100 2100 2100
+$Comp
+L power:GNDD #PWR?
+U 1 1 60830971
+P 1500 2500
+F 0 "#PWR?" H 1500 2250 50  0001 C CNN
+F 1 "GNDD" H 1504 2345 50  0000 C CNN
+F 2 "" H 1500 2500 50  0001 C CNN
+F 3 "" H 1500 2500 50  0001 C CNN
+	1    1500 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 2500 1200 2500
+Connection ~ 1200 2500
+Wire Wire Line
+	1200 2500 1200 2450
+Text Label 2100 2100 0    50   ~ 0
+AI_MCU_OSC32_IN
+Text Label 2100 2900 0    50   ~ 0
+AO_MCU_OSC32_OUT
+$Comp
+L Device:R R?
+U 1 1 608C3EFB
+P 1050 3400
+F 0 "R?" H 980 3309 50  0000 R CNN
+F 1 "1k" H 980 3400 50  0000 R CNN
+F 2 "" V 980 3400 50  0001 C CNN
+F 3 "~" H 1050 3400 50  0001 C CNN
+F 4 "NM" H 980 3491 50  0000 R CNN "mounted"
+	1    1050 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608C45D1
+P 1050 3800
+F 0 "R?" H 980 3754 50  0000 R CNN
+F 1 "1k" H 980 3845 50  0000 R CNN
+F 2 "" V 980 3800 50  0001 C CNN
+F 3 "~" H 1050 3800 50  0001 C CNN
+	1    1050 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 608C4962
+P 1050 4000
+F 0 "#PWR?" H 1050 3750 50  0001 C CNN
+F 1 "GNDD" H 1054 3845 50  0000 C CNN
+F 2 "" H 1050 4000 50  0001 C CNN
+F 3 "" H 1050 4000 50  0001 C CNN
+	1    1050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4000 1050 3950
+Wire Wire Line
+	1050 3650 1050 3600
+Wire Wire Line
+	1050 3600 1250 3600
+Connection ~ 1050 3600
+Wire Wire Line
+	1050 3600 1050 3550
+Wire Wire Line
+	1050 3250 1050 3200
+Text Label 1000 3200 2    50   ~ 0
+P_STM_3V3
+Text Label 1250 3600 0    50   ~ 0
+DI_MCU_BOOT0
+$Comp
+L Device:R R?
+U 1 1 608D43F2
+P 2550 3400
+F 0 "R?" H 2480 3354 50  0000 R CNN
+F 1 "1k" H 2480 3445 50  0000 R CNN
+F 2 "" V 2480 3400 50  0001 C CNN
+F 3 "~" H 2550 3400 50  0001 C CNN
+	1    2550 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608D4BCF
+P 3200 3400
+F 0 "R?" H 3130 3354 50  0000 R CNN
+F 1 "1k" H 3130 3445 50  0000 R CNN
+F 2 "" V 3130 3400 50  0001 C CNN
+F 3 "~" H 3200 3400 50  0001 C CNN
+	1    3200 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 3250 2550 3200
+Wire Wire Line
+	2550 3200 3200 3200
+Wire Wire Line
+	3200 3200 3200 3250
+Wire Wire Line
+	2550 3200 1050 3200
+Connection ~ 2550 3200
+Wire Wire Line
+	1050 3200 1000 3200
+Connection ~ 1050 3200
+Wire Wire Line
+	3200 3550 3200 3600
+Wire Wire Line
+	3200 3600 3350 3600
+Wire Wire Line
+	2550 3550 2550 3750
+Wire Wire Line
+	2550 3750 3350 3750
+Text Label 3350 3600 0    50   ~ 0
+DO_IIC_CLK
+Text Label 3350 3750 0    50   ~ 0
+DIO_IIC_DAT
+Wire Wire Line
+	6550 3400 5850 3400
+Wire Wire Line
+	6550 3300 5850 3300
+Text Label 6400 1600 2    50   ~ 0
+DI_MCU_BOOT0
+Wire Wire Line
+	6550 1600 6400 1600
+Text Label 5500 3200 0    50   ~ 0
+DIO_MCU_7
+Text Label 5500 3100 0    50   ~ 0
+DIO_MCU_6
+Text Label 5500 3000 0    50   ~ 0
+DIO_MCU_5
+Text Label 5500 2900 0    50   ~ 0
+DIO_MCU_4
+Text Label 5500 2800 0    50   ~ 0
+DIO_MCU_3
+Text Label 5500 2700 0    50   ~ 0
+DIO_MCU_2
+Text Label 5500 2600 0    50   ~ 0
+DIO_MCU_1
+Text Label 5500 2500 0    50   ~ 0
+DIO_MCU_0
+Wire Wire Line
+	5450 3200 6550 3200
+Wire Wire Line
+	5450 3100 6550 3100
+Wire Wire Line
+	5450 3000 6550 3000
+Wire Wire Line
+	5450 2900 6550 2900
+Wire Wire Line
+	5450 2800 6550 2800
+Wire Wire Line
+	5450 2700 6550 2700
+Wire Wire Line
+	5450 2600 6550 2600
+Wire Wire Line
+	5450 2500 6550 2500
+Entry Wire Line
+	5350 3100 5450 3200
+Entry Wire Line
+	5350 3000 5450 3100
+Entry Wire Line
+	5350 2900 5450 3000
+Entry Wire Line
+	5350 2800 5450 2900
+Entry Wire Line
+	5350 2700 5450 2800
+Entry Wire Line
+	5350 2600 5450 2700
+Entry Wire Line
+	5350 2500 5450 2600
+Entry Wire Line
+	5350 2400 5450 2500
+Text Label 5350 3100 1    50   ~ 0
+DIO_MCU_[0..10]
+Text HLabel 4850 2350 0    50   Input ~ 0
+DIO_MCU_[0..10]
+Wire Bus Line
+	5350 2350 4850 2350
+Text Label 6400 2300 2    50   ~ 0
+AO_MCU_OSC32_OUT
+Text Label 6400 2200 2    50   ~ 0
+AI_MCU_OSC32_IN
+Text Label 6400 1900 2    50   ~ 0
+AO_MCU_OSC_OUT
+Text Label 6400 1800 2    50   ~ 0
+AI_MCU_OSC_IN
+Wire Wire Line
+	6550 2300 6400 2300
+Wire Wire Line
+	6550 2200 6400 2200
+Wire Wire Line
+	6400 1900 6550 1900
+Wire Wire Line
+	6550 1800 6400 1800
+Text Label 7050 950  0    50   ~ 0
+P_STM_3V3
+Connection ~ 7050 1100
+Wire Wire Line
+	7050 1100 7050 950 
+Wire Wire Line
+	7350 1100 7450 1100
+Connection ~ 7350 1100
+Wire Wire Line
+	7350 1200 7350 1100
+Wire Wire Line
+	7250 1100 7350 1100
+Connection ~ 7250 1100
+Wire Wire Line
+	7250 1200 7250 1100
+Wire Wire Line
+	7150 1100 7250 1100
+Connection ~ 7150 1100
+Wire Wire Line
+	7150 1200 7150 1100
+Wire Wire Line
+	7450 1100 7450 1200
+Wire Wire Line
+	7050 1100 7150 1100
+Wire Wire Line
+	7050 1200 7050 1100
+Wire Wire Line
+	7150 4250 7250 4250
+Connection ~ 7150 4250
+Wire Wire Line
+	7150 4200 7150 4250
+Wire Wire Line
+	7250 4250 7350 4250
+Connection ~ 7250 4250
+Wire Wire Line
+	7250 4200 7250 4250
+Wire Wire Line
+	7050 4250 7050 4300
+Connection ~ 7050 4250
+Wire Wire Line
+	7350 4250 7350 4200
+Wire Wire Line
+	7050 4250 7150 4250
+Wire Wire Line
+	7050 4200 7050 4250
+Text Label 5950 3600 0    50   ~ 0
+DIO_IIC_DAT
+Text Label 5950 3500 0    50   ~ 0
+DO_IIC_CLK
+Text HLabel 5850 3600 0    50   Input ~ 0
+DIO_IIC_DAT
+Text HLabel 5850 3500 0    50   Input ~ 0
+DO_IIC_CLK
+Wire Wire Line
+	6550 3600 5850 3600
+Wire Wire Line
+	6550 3500 5850 3500
+Wire Wire Line
+	7850 3600 9000 3600
+Wire Wire Line
+	9000 3700 9700 3700
+Wire Wire Line
+	9000 3600 9000 3700
+Wire Wire Line
+	7850 3700 8900 3700
+Wire Wire Line
+	8900 3800 8900 3700
+Wire Wire Line
+	9700 3800 8900 3800
+Wire Wire Line
+	7850 3800 8800 3800
+Wire Wire Line
+	8800 3900 9700 3900
+Wire Wire Line
+	8800 3800 8800 3900
+Wire Wire Line
+	8700 4000 8700 3900
+Wire Wire Line
+	9700 4000 8700 4000
+Text HLabel 9700 4000 2    50   Input ~ 0
+SWCLK
+Text HLabel 9700 3900 2    50   Input ~ 0
+SWDIO
+Text HLabel 9700 3800 2    50   Input ~ 0
+DIO_USB_DP
+Text HLabel 9700 3700 2    50   Input ~ 0
+DIO_USB_DM
+Wire Bus Line
+	10400 2300 9700 2300
+Wire Wire Line
+	7850 2500 9600 2500
+Wire Wire Line
+	7850 2600 9600 2600
+Wire Wire Line
+	7850 2700 9600 2700
+Wire Wire Line
+	7850 2800 9600 2800
+Wire Wire Line
+	7850 2900 9600 2900
+Wire Wire Line
+	7850 3000 9600 3000
+Wire Wire Line
+	7850 3100 9600 3100
+Wire Wire Line
+	7850 3200 9600 3200
+Wire Wire Line
+	7850 3300 9600 3300
+Wire Wire Line
+	7850 3400 9600 3400
+Wire Wire Line
+	7850 3500 9600 3500
+Text Label 9550 3500 2    50   ~ 0
+DIO_MCU_10
+Text Label 9550 3400 2    50   ~ 0
+DIO_MCU_9
+Text Label 9550 3300 2    50   ~ 0
+DIO_MCU_8
+Text Label 9550 3200 2    50   ~ 0
+DIO_MCU_7
+Text Label 9550 3100 2    50   ~ 0
+DIO_MCU_6
+Text Label 9550 3000 2    50   ~ 0
+DIO_MCU_5
+Text Label 9550 2900 2    50   ~ 0
+DIO_MCU_4
+Text Label 9550 2800 2    50   ~ 0
+DIO_MCU_3
+Text Label 9550 2700 2    50   ~ 0
+DIO_MCU_2
+Text Label 9550 2600 2    50   ~ 0
+DIO_MCU_1
+Text Label 9550 2500 2    50   ~ 0
+DIO_MCU_0
+Entry Wire Line
+	9600 3500 9700 3600
+Entry Wire Line
+	9600 3400 9700 3500
+Entry Wire Line
+	9600 3300 9700 3400
+Entry Wire Line
+	9600 3200 9700 3300
+Entry Wire Line
+	9600 3100 9700 3200
+Entry Wire Line
+	9600 3000 9700 3100
+Entry Wire Line
+	9600 2900 9700 3000
+Entry Wire Line
+	9600 2800 9700 2900
+Entry Wire Line
+	9600 2700 9700 2800
+Entry Wire Line
+	9600 2600 9700 2700
+Entry Wire Line
+	9600 2500 9700 2600
+Wire Wire Line
+	8700 3900 7850 3900
+Text Label 7900 3900 0    50   ~ 0
+SWCLK
+Text Label 7900 3800 0    50   ~ 0
+SWDIO
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 60FCCD70
+P 7250 2700
+F 0 "U?" H 7250 2700 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 7200 2600 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 6650 1300 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 7250 2700 50  0001 C CNN
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
+Text Label 7900 3700 0    50   ~ 0
+DIO_USB_DP
+Text Label 7900 3600 0    50   ~ 0
+DIO_USB_DM
+Text Label 9700 2300 0    50   ~ 0
+DIO_MCU_[0..10]
+Text HLabel 10400 2300 2    50   Input ~ 0
+DIO_MCU_[0..10]
+Text Notes 8200 1700 0    50   ~ 0
+DIO_MCU_0: MCU to TFP; DFO Input - TFT(low)/DSTN\nDIO_MCU_1: MCU to TFP; not Power-Down\nDIO_MCU_2: MCU to TFP; Driver Strength low/high\nDIO_MCU_3: TFP to MCU; Sync detection\nDIO_MCU_4: MCU to TFP; not Power-Down Outputs\nDIO_MCU_5: MCU to TFP; falling(low)/rising edge CLK sync\nDIO_MCU_6: MCU to SN95; falling(low)/rising edge CLK sync\nDIO_MCU_7: MCU to SN95; not Shutdown\nDIO_MCU_8: TFP to MCU; CTL1\nDIO_MCU_9: TFP to MCU; CTL2\nDIO_MCU_10: TFP to MCU; CTL3
+Wire Bus Line
+	5350 2350 5350 3100
+Wire Bus Line
+	9700 2300 9700 3600
+$EndSCHEMATC
