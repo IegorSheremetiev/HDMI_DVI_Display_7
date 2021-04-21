@@ -1,0 +1,4 @@
+# Datasheets shouldn't be placed into the project folder
+HDMI_DVI_DISP_7/Requirements&Datasheets/
+# All backups are not neccessary
+*bak
