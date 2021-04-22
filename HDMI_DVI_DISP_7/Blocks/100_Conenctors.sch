@@ -343,7 +343,7 @@ F 3 "~" H 3500 10500 50  0001 C CNN
 	1    3500 10500
 	1    0    0    -1  
 $EndComp
-Text Label 2000 6050 2    50   ~ 0
+Text Label 1950 6050 2    50   ~ 0
 P_TMDS_5V
 Text Label 1750 8150 2    50   ~ 0
 P_TMDS_5V
@@ -1241,6 +1241,15 @@ Wire Wire Line
 	1550 3750 1550 4250
 Wire Wire Line
 	3500 10250 4450 10250
+Wire Wire Line
+	2000 6050 1950 6050
+Connection ~ 2000 6050
+Wire Wire Line
+	2000 6050 2000 5850
+Wire Wire Line
+	2000 5850 2150 5850
 Wire Bus Line
 	4650 2550 4650 3550
+Text HLabel 2150 5850 2    50   Input ~ 0
+P_TMDS_5V
 $EndSCHEMATC
