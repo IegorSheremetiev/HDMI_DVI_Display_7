@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title "Video Links"
 Date "2021-04-14"
 Rev "0"
@@ -156,7 +156,7 @@ Text Label 10450 2650 0    50   ~ 0
 DO_LVDS_9
 Text Label 11600 1200 0    50   ~ 0
 DO_LVDS_[0..9]
-Text HLabel 12400 1200 2    50   Input ~ 0
+Text HLabel 12400 1200 2    50   Output ~ 0
 DO_LVDS_[0..9]
 Wire Wire Line
 	5950 1750 5700 1750
@@ -471,9 +471,9 @@ $EndComp
 Wire Wire Line
 	8950 7750 8950 7700
 Wire Wire Line
-	8950 7350 9000 7350
+	8950 7350 9400 7350
 Connection ~ 8950 7350
-Text Label 9000 7350 0    50   ~ 0
+Text Label 9700 7350 0    50   ~ 0
 P_TMDS_DVDD_3V3
 Text Label 8250 6350 2    50   ~ 0
 P_SMPS_3V3
@@ -656,9 +656,9 @@ $EndComp
 Wire Wire Line
 	8950 8750 8950 8700
 Wire Wire Line
-	8950 8350 9000 8350
+	8950 8350 9400 8350
 Connection ~ 8950 8350
-Text Label 9000 8350 0    50   ~ 0
+Text Label 9700 8350 0    50   ~ 0
 P_TMDS_OVDD_3V3
 $Comp
 L Device:Ferrite_Bead FB?
@@ -700,9 +700,9 @@ $EndComp
 Wire Wire Line
 	8950 9750 8950 9700
 Wire Wire Line
-	8950 9350 9000 9350
+	8950 9350 9400 9350
 Connection ~ 8950 9350
-Text Label 9000 9350 0    50   ~ 0
+Text Label 9700 9350 0    50   ~ 0
 P_TMDS_PLL_3V3
 $Comp
 L Device:Ferrite_Bead FB?
@@ -899,44 +899,6 @@ Text Notes 5950 4150 2    50   ~ 0
 Input - Output clock data format: TFT(low)/DSTN(high)
 Wire Wire Line
 	5950 5800 5700 5800
-Wire Bus Line
-	1800 3100 1150 3100
-Wire Wire Line
-	1900 4150 5950 4150
-Wire Wire Line
-	1900 4300 5950 4300
-Wire Wire Line
-	1900 4450 5950 4450
-Wire Wire Line
-	1900 4900 5950 4900
-Wire Wire Line
-	1900 5050 5950 5050
-Wire Wire Line
-	1900 5200 5950 5200
-Wire Wire Line
-	1900 5350 5950 5350
-Wire Wire Line
-	1900 5500 5950 5500
-Wire Wire Line
-	1900 5950 5950 5950
-Entry Wire Line
-	1800 4050 1900 4150
-Entry Wire Line
-	1800 4200 1900 4300
-Entry Wire Line
-	1800 4350 1900 4450
-Entry Wire Line
-	1800 4800 1900 4900
-Entry Wire Line
-	1800 4950 1900 5050
-Entry Wire Line
-	1800 5100 1900 5200
-Entry Wire Line
-	1800 5250 1900 5350
-Entry Wire Line
-	1800 5400 1900 5500
-Entry Wire Line
-	1800 5850 1900 5950
 Wire Wire Line
 	5700 5650 5950 5650
 Text Label 5700 4600 2    50   ~ 0
@@ -947,28 +909,10 @@ Text Label 5700 5650 2    50   ~ 0
 AI_EXT_50R_TERM
 Text Label 5700 5800 2    50   ~ 0
 AI_RSVD_LOW
-Text Notes 1200 2500 0    50   ~ 0
-DIO_MCU_0: MCU to TFP; DFO Input - TFT(low)/DSTN\nDIO_MCU_1: MCU to TFP; not Power-Down\nDIO_MCU_2: MCU to TFP; Driver Strength low/high\nDIO_MCU_3: TFP to MCU; Sync detection\nDIO_MCU_4: MCU to TFP; not Power-Down Outputs\nDIO_MCU_5: MCU to TFP; falling(low)/rising edge CLK sync\nDIO_MCU_6: MCU to SN95; falling(low)/rising edge CLK sync\nDIO_MCU_7:MCU to SN95; not Shutdown\nDIO_MCU_8: TFP to MCU; CTL1\nDIO_MCU_9: TFP to MCU; CTL2\nDIO_MCU_10: TFP to MCU; CTL3
-Text Label 1200 3100 0    50   ~ 0
-DIO_MCU_[0..10]
-Text Label 1950 4150 0    50   ~ 0
-DIO_MCU_0
-Text Label 1950 4300 0    50   ~ 0
-DIO_MCU_1
-Text Label 1950 4450 0    50   ~ 0
-DIO_MCU_2
-Text Label 1950 4900 0    50   ~ 0
-DIO_MCU_3
-Text Label 1950 5050 0    50   ~ 0
-DIO_MCU_4
-Text Label 1950 5950 0    50   ~ 0
-DIO_MCU_5
-Text Label 10450 2950 0    50   ~ 0
-DIO_MCU_6
-Text Label 10450 3100 0    50   ~ 0
-DIO_MCU_7
-Text Label 1950 5200 0    50   ~ 0
-DIO_MCU_8
+Text Label 10850 2950 0    50   ~ 0
+CLK_SEL
+Text Label 10850 3100 0    50   ~ 0
+LVDS_EN
 $Comp
 L Device:R R?
 U 1 1 60C25E01
@@ -1017,10 +961,6 @@ F 3 "" H 1700 10450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1700 10450 1700 10350
-Wire Wire Line
-	1100 10050 1100 9900
-Wire Wire Line
-	1700 10050 1700 9900
 Text Label 1100 9900 2    50   ~ 0
 DI_2PPC_EN
 Text Label 1700 9900 2    50   ~ 0
@@ -1053,8 +993,6 @@ F 3 "" H 2550 10450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 10450 2550 10350
-Wire Wire Line
-	2550 10050 2550 9900
 $Comp
 L Device:R R?
 U 1 1 60C761A2
@@ -1067,21 +1005,9 @@ F 3 "~" H 3350 10200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 10050 3350 9900
+	3350 10050 3350 9950
 Text Label 3350 9900 2    50   ~ 0
 P_TMDS_DVDD_3V3
-Wire Wire Line
-	3350 10350 3350 10500
-Text Label 11950 3250 0    50   ~ 0
-DIO_MCU_[0..10]
-Entry Wire Line
-	11500 2950 11600 3050
-Entry Wire Line
-	11500 3100 11600 3200
-Wire Wire Line
-	11500 3100 10400 3100
-Wire Wire Line
-	10400 2950 11500 2950
 Wire Wire Line
 	10700 3400 10700 3550
 Connection ~ 10700 5350
@@ -1157,12 +1083,6 @@ Wire Wire Line
 	10400 5350 10700 5350
 Wire Wire Line
 	10400 3250 10850 3250
-Text HLabel 1150 3100 0    50   Input ~ 0
-DIO_MCU_[0..10]
-Wire Bus Line
-	11600 3250 12650 3250
-Text HLabel 12650 3250 2    50   Input ~ 0
-DIO_MCU_[0..10]
 Text Label 10850 3250 0    50   ~ 0
 P_LVDSVCC_3V3
 Text Label 10850 3850 0    50   ~ 0
@@ -1224,7 +1144,7 @@ F 3 "~" H 9350 6550 50  0001 C CNN
 	1    9350 6550
 	1    0    0    -1  
 $EndComp
-Text Label 9400 6350 0    50   ~ 0
+Text Label 9700 6350 0    50   ~ 0
 P_LVDSVCC_3V3
 Wire Wire Line
 	8950 6350 9350 6350
@@ -1232,7 +1152,7 @@ Wire Wire Line
 	9350 6400 9350 6350
 Connection ~ 9350 6350
 Wire Wire Line
-	9350 6350 9400 6350
+	9350 6350 9700 6350
 $Comp
 L power:GNDD #PWR?
 U 1 1 60E9F148
@@ -1310,7 +1230,7 @@ Wire Wire Line
 	11550 6400 11550 6350
 Connection ~ 11550 6350
 Wire Wire Line
-	11550 6350 11600 6350
+	11550 6350 12000 6350
 $Comp
 L power:GNDD #PWR?
 U 1 1 60ECDFE5
@@ -1454,7 +1374,7 @@ Wire Wire Line
 	11550 8400 11550 8350
 Connection ~ 11550 8350
 Wire Wire Line
-	11550 8350 11600 8350
+	11550 8350 12000 8350
 $Comp
 L power:GNDD #PWR?
 U 1 1 60EF3454
@@ -1468,11 +1388,11 @@ F 3 "" H 11550 8750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11550 8750 11550 8700
-Text Label 11600 6350 0    50   ~ 0
+Text Label 12250 6350 0    50   ~ 0
 P_LVDS_PLL_3V3
-Text Label 12050 7350 0    50   ~ 0
+Text Label 12250 7350 0    50   ~ 0
 P_LVDS_IOVCC_3V3
-Text Label 11600 8350 0    50   ~ 0
+Text Label 12250 8350 0    50   ~ 0
 P_LVDS_VCC_3V3
 $Comp
 L Device:C C?
@@ -1503,7 +1423,7 @@ Wire Wire Line
 Wire Wire Line
 	11550 7350 12000 7350
 Wire Wire Line
-	12050 7350 12000 7350
+	12250 7350 12000 7350
 Connection ~ 12000 7350
 Wire Wire Line
 	10500 6350 10500 7350
@@ -1522,16 +1442,645 @@ P_SMPS_3V3
 Wire Wire Line
 	8200 5850 8300 5850
 Connection ~ 8300 5850
-Text Label 1950 5350 0    50   ~ 0
-DIO_MCU_9
-Text Label 1950 5500 0    50   ~ 0
-DIO_MCU_10
-Wire Bus Line
-	11600 3050 11600 3250
-Wire Bus Line
-	1800 3100 1800 5850
+Wire Wire Line
+	5950 4900 4650 4900
+Text HLabel 4650 4900 0    50   Output ~ 0
+DO_SYNC_DET
+Wire Wire Line
+	5950 4300 4650 4300
+Text Label 4650 4300 2    50   ~ 0
+~PD
+Wire Wire Line
+	5950 5050 3650 5050
+Text Label 3650 5050 2    50   ~ 0
+~PDO
+Text Label 4800 10500 0    50   ~ 0
+~PDO
+Text Label 4000 10500 0    50   ~ 0
+~PD
+$Comp
+L Device:R R?
+U 1 1 60987427
+P 4800 10200
+F 0 "R?" H 4870 10246 50  0000 L CNN
+F 1 "1k" H 4870 10155 50  0000 L CNN
+F 2 "" V 4730 10200 50  0001 C CNN
+F 3 "~" H 4800 10200 50  0001 C CNN
+	1    4800 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60987B36
+P 4000 10200
+F 0 "R?" H 4070 10246 50  0000 L CNN
+F 1 "1k" H 4070 10155 50  0000 L CNN
+F 2 "" V 3930 10200 50  0001 C CNN
+F 3 "~" H 4000 10200 50  0001 C CNN
+	1    4000 10200
+	1    0    0    -1  
+$EndComp
+Text Label 4800 9900 2    50   ~ 0
+P_TMDS_OVDD_3V3
+Wire Wire Line
+	4800 9900 4800 10050
+Wire Wire Line
+	4000 10050 4000 9950
+Wire Wire Line
+	4000 9950 3350 9950
+Connection ~ 3350 9950
+Wire Wire Line
+	3350 9950 3350 9900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB269D
+P 9400 9200
+F 0 "TP?" H 9458 9318 50  0000 L CNN
+F 1 "TestPoint" H 9458 9227 50  0000 L CNN
+F 2 "" H 9600 9200 50  0001 C CNN
+F 3 "~" H 9600 9200 50  0001 C CNN
+	1    9400 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB310F
+P 9400 8200
+F 0 "TP?" H 9458 8318 50  0000 L CNN
+F 1 "TestPoint" H 9458 8227 50  0000 L CNN
+F 2 "" H 9600 8200 50  0001 C CNN
+F 3 "~" H 9600 8200 50  0001 C CNN
+	1    9400 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB35E8
+P 9400 7200
+F 0 "TP?" H 9458 7318 50  0000 L CNN
+F 1 "TestPoint" H 9458 7227 50  0000 L CNN
+F 2 "" H 9600 7200 50  0001 C CNN
+F 3 "~" H 9600 7200 50  0001 C CNN
+	1    9400 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB3BED
+P 9350 6200
+F 0 "TP?" H 9408 6318 50  0000 L CNN
+F 1 "TestPoint" H 9408 6227 50  0000 L CNN
+F 2 "" H 9550 6200 50  0001 C CNN
+F 3 "~" H 9550 6200 50  0001 C CNN
+	1    9350 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB3F5E
+P 9400 10200
+F 0 "TP?" H 9458 10318 50  0000 L CNN
+F 1 "TestPoint" H 9458 10227 50  0000 L CNN
+F 2 "" H 9600 10200 50  0001 C CNN
+F 3 "~" H 9600 10200 50  0001 C CNN
+	1    9400 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB4957
+P 12000 8250
+F 0 "TP?" H 12058 8368 50  0000 L CNN
+F 1 "TestPoint" H 12058 8277 50  0000 L CNN
+F 2 "" H 12200 8250 50  0001 C CNN
+F 3 "~" H 12200 8250 50  0001 C CNN
+	1    12000 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB50F2
+P 12000 7250
+F 0 "TP?" H 12058 7368 50  0000 L CNN
+F 1 "TestPoint" H 12058 7277 50  0000 L CNN
+F 2 "" H 12200 7250 50  0001 C CNN
+F 3 "~" H 12200 7250 50  0001 C CNN
+	1    12000 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB569C
+P 12000 6250
+F 0 "TP?" H 12058 6368 50  0000 L CNN
+F 1 "TestPoint" H 12058 6277 50  0000 L CNN
+F 2 "" H 12200 6250 50  0001 C CNN
+F 3 "~" H 12200 6250 50  0001 C CNN
+	1    12000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB5B44
+P 3350 10600
+F 0 "TP?" H 3292 10626 50  0000 R CNN
+F 1 "TestPoint" H 3292 10717 50  0000 R CNN
+F 2 "" H 3550 10600 50  0001 C CNN
+F 3 "~" H 3550 10600 50  0001 C CNN
+	1    3350 10600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB748E
+P 4000 10600
+F 0 "TP?" H 3942 10626 50  0000 R CNN
+F 1 "TestPoint" H 3942 10717 50  0000 R CNN
+F 2 "" H 4200 10600 50  0001 C CNN
+F 3 "~" H 4200 10600 50  0001 C CNN
+	1    4000 10600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB7898
+P 4800 10600
+F 0 "TP?" H 4742 10626 50  0000 R CNN
+F 1 "TestPoint" H 4742 10717 50  0000 R CNN
+F 2 "" H 5000 10600 50  0001 C CNN
+F 3 "~" H 5000 10600 50  0001 C CNN
+	1    4800 10600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB7D8B
+P 2550 9800
+F 0 "TP?" H 2608 9918 50  0000 L CNN
+F 1 "TestPoint" H 2608 9827 50  0000 L CNN
+F 2 "" H 2750 9800 50  0001 C CNN
+F 3 "~" H 2750 9800 50  0001 C CNN
+	1    2550 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB87D9
+P 1700 9800
+F 0 "TP?" H 1758 9918 50  0000 L CNN
+F 1 "TestPoint" H 1758 9827 50  0000 L CNN
+F 2 "" H 1900 9800 50  0001 C CNN
+F 3 "~" H 1900 9800 50  0001 C CNN
+	1    1700 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60AB8B50
+P 1100 9800
+F 0 "TP?" H 1158 9918 50  0000 L CNN
+F 1 "TestPoint" H 1158 9827 50  0000 L CNN
+F 2 "" H 1300 9800 50  0001 C CNN
+F 3 "~" H 1300 9800 50  0001 C CNN
+	1    1100 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 9800 1100 10050
+Wire Wire Line
+	3350 10350 3350 10600
+Wire Wire Line
+	4000 10350 4000 10600
+Wire Wire Line
+	4800 10350 4800 10600
+Wire Wire Line
+	5950 5200 5700 5200
+Wire Wire Line
+	5950 5350 5700 5350
+Wire Wire Line
+	5950 5500 5700 5500
+Text Label 5700 5200 2    50   ~ 0
+CTL1
+Text Label 5700 5350 2    50   ~ 0
+CTL2
+Text Label 5700 5500 2    50   ~ 0
+CTL3
+Text Label 6350 9900 2    50   ~ 0
+CTL1
+Text Label 7050 9900 2    50   ~ 0
+CTL2
+Text Label 7700 9900 2    50   ~ 0
+CTL3
+$Comp
+L Device:R R?
+U 1 1 60BB044B
+P 6350 10200
+F 0 "R?" H 6420 10246 50  0000 L CNN
+F 1 "1k" H 6420 10155 50  0000 L CNN
+F 2 "" V 6280 10200 50  0001 C CNN
+F 3 "~" H 6350 10200 50  0001 C CNN
+	1    6350 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60BB0A45
+P 6350 10450
+F 0 "#PWR?" H 6350 10200 50  0001 C CNN
+F 1 "GNDD" H 6354 10295 50  0000 C CNN
+F 2 "" H 6350 10450 50  0001 C CNN
+F 3 "" H 6350 10450 50  0001 C CNN
+	1    6350 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 10350 6350 10450
+$Comp
+L Device:R R?
+U 1 1 60BEABB8
+P 7050 10200
+F 0 "R?" H 7120 10246 50  0000 L CNN
+F 1 "1k" H 7120 10155 50  0000 L CNN
+F 2 "" V 6980 10200 50  0001 C CNN
+F 3 "~" H 7050 10200 50  0001 C CNN
+	1    7050 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60BEABBE
+P 7050 10450
+F 0 "#PWR?" H 7050 10200 50  0001 C CNN
+F 1 "GNDD" H 7054 10295 50  0000 C CNN
+F 2 "" H 7050 10450 50  0001 C CNN
+F 3 "" H 7050 10450 50  0001 C CNN
+	1    7050 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 10350 7050 10450
+$Comp
+L Device:R R?
+U 1 1 60BFE3E6
+P 7700 10200
+F 0 "R?" H 7770 10246 50  0000 L CNN
+F 1 "1k" H 7770 10155 50  0000 L CNN
+F 2 "" V 7630 10200 50  0001 C CNN
+F 3 "~" H 7700 10200 50  0001 C CNN
+	1    7700 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60BFE3EC
+P 7700 10450
+F 0 "#PWR?" H 7700 10200 50  0001 C CNN
+F 1 "GNDD" H 7704 10295 50  0000 C CNN
+F 2 "" H 7700 10450 50  0001 C CNN
+F 3 "" H 7700 10450 50  0001 C CNN
+	1    7700 10450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 10350 7700 10450
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C1153B
+P 6350 9800
+F 0 "TP?" H 6408 9918 50  0000 L CNN
+F 1 "TestPoint" H 6408 9827 50  0000 L CNN
+F 2 "" H 6550 9800 50  0001 C CNN
+F 3 "~" H 6550 9800 50  0001 C CNN
+	1    6350 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 9800 2550 10050
+Wire Wire Line
+	1700 9800 1700 10050
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C12E99
+P 7050 9800
+F 0 "TP?" H 7108 9918 50  0000 L CNN
+F 1 "TestPoint" H 7108 9827 50  0000 L CNN
+F 2 "" H 7250 9800 50  0001 C CNN
+F 3 "~" H 7250 9800 50  0001 C CNN
+	1    7050 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60C13294
+P 7700 9800
+F 0 "TP?" H 7758 9918 50  0000 L CNN
+F 1 "TestPoint" H 7758 9827 50  0000 L CNN
+F 2 "" H 7900 9800 50  0001 C CNN
+F 3 "~" H 7900 9800 50  0001 C CNN
+	1    7700 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 9800 6350 10050
+Wire Wire Line
+	7050 9800 7050 10050
+Wire Wire Line
+	7700 9800 7700 10050
+Wire Wire Line
+	9400 10200 9400 10350
+Wire Wire Line
+	9400 9200 9400 9350
+Connection ~ 9400 9350
+Wire Wire Line
+	9400 9350 9700 9350
+Wire Wire Line
+	9400 8200 9400 8350
+Connection ~ 9400 8350
+Wire Wire Line
+	9400 8350 9700 8350
+Wire Wire Line
+	9400 7200 9400 7350
+Connection ~ 9400 7350
+Wire Wire Line
+	9400 7350 9700 7350
+Wire Wire Line
+	9350 6200 9350 6350
+Wire Wire Line
+	12000 6250 12000 6350
+Connection ~ 12000 6350
+Wire Wire Line
+	12000 6350 12250 6350
+Wire Wire Line
+	12000 7250 12000 7350
+Wire Wire Line
+	12000 8250 12000 8350
+Connection ~ 12000 8350
+Wire Wire Line
+	12000 8350 12250 8350
+Wire Wire Line
+	5950 4150 3300 4150
+Wire Wire Line
+	3300 4150 3300 4550
+Wire Wire Line
+	3400 4650 3400 4450
+Wire Wire Line
+	3400 4450 5950 4450
+Wire Wire Line
+	5950 5950 3300 5950
+Wire Wire Line
+	3300 5950 3300 4750
+$Comp
+L Device:R R?
+U 1 1 60EF50BC
+P 2200 3800
+F 0 "R?" H 2270 3846 50  0000 L CNN
+F 1 "1k" H 2270 3755 50  0000 L CNN
+F 2 "" V 2130 3800 50  0001 C CNN
+F 3 "~" H 2200 3800 50  0001 C CNN
+	1    2200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EF6140
+P 2650 3800
+F 0 "R?" H 2720 3846 50  0000 L CNN
+F 1 "1k" H 2720 3755 50  0000 L CNN
+F 2 "" V 2580 3800 50  0001 C CNN
+F 3 "~" H 2650 3800 50  0001 C CNN
+	1    2650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60EF64C3
+P 3100 3800
+F 0 "R?" H 3170 3846 50  0000 L CNN
+F 1 "1k" H 3170 3755 50  0000 L CNN
+F 2 "" V 3030 3800 50  0001 C CNN
+F 3 "~" H 3100 3800 50  0001 C CNN
+	1    3100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3650 2200 3600
+Wire Wire Line
+	2200 3600 2650 3600
+Wire Wire Line
+	3100 3600 3100 3650
+Wire Wire Line
+	2650 3650 2650 3600
+Connection ~ 2650 3600
+Wire Wire Line
+	2650 3600 3100 3600
+Wire Wire Line
+	2200 3600 2200 3550
+Connection ~ 2200 3600
+Wire Wire Line
+	2200 3950 2200 4000
+Wire Wire Line
+	2200 4000 2550 4000
+Wire Wire Line
+	2750 4000 3100 4000
+Wire Wire Line
+	3100 4000 3100 3950
+Text Label 2200 3550 0    50   ~ 0
+P_TMDS_DVDD_3V3
+$Comp
+L Connector:TestPoint TP?
+U 1 1 610B4215
+P 2650 5200
+F 0 "TP?" H 2592 5226 50  0000 R CNN
+F 1 "TestPoint" H 2592 5317 50  0000 R CNN
+F 2 "" H 2850 5200 50  0001 C CNN
+F 3 "~" H 2850 5200 50  0001 C CNN
+	1    2650 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 610B4F09
+P 2550 5500
+F 0 "TP?" H 2492 5526 50  0000 R CNN
+F 1 "TestPoint" H 2492 5617 50  0000 R CNN
+F 2 "" H 2750 5500 50  0001 C CNN
+F 3 "~" H 2750 5500 50  0001 C CNN
+	1    2550 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 610B5343
+P 2450 5750
+F 0 "TP?" H 2392 5776 50  0000 R CNN
+F 1 "TestPoint" H 2392 5867 50  0000 R CNN
+F 2 "" H 2650 5750 50  0001 C CNN
+F 3 "~" H 2650 5750 50  0001 C CNN
+	1    2450 5750
+	-1   0    0    1   
+$EndComp
+Text Label 2850 4550 0    50   ~ 0
+ODF
+Text Label 2850 4650 0    50   ~ 0
+DST
+Text Label 2850 4750 0    50   ~ 0
+TMDS_OCK
+Wire Wire Line
+	10850 3100 10400 3100
+Wire Wire Line
+	10850 2950 10400 2950
+Wire Wire Line
+	1850 4750 2550 4750
+Wire Wire Line
+	1850 4850 2450 4850
+Text Label 2850 4850 0    50   ~ 0
+LVDS_OCK
+Connection ~ 2450 4850
+Wire Wire Line
+	2450 4850 2850 4850
+Connection ~ 2550 4750
+Wire Wire Line
+	2550 4750 3300 4750
+Connection ~ 2650 4650
+Wire Wire Line
+	2650 4650 3400 4650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 612C31ED
+P 2750 4900
+F 0 "TP?" H 2692 4926 50  0000 R CNN
+F 1 "TestPoint" H 2692 5017 50  0000 R CNN
+F 2 "" H 2950 4900 50  0001 C CNN
+F 3 "~" H 2950 4900 50  0001 C CNN
+	1    2750 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 4900 2750 4550
+Connection ~ 2750 4550
+Wire Wire Line
+	2750 4550 3300 4550
+Wire Wire Line
+	2450 4850 2450 5750
+Wire Wire Line
+	2550 4750 2550 5500
+Wire Wire Line
+	2650 4650 2650 5200
+Wire Wire Line
+	2650 3950 2650 4650
+Wire Wire Line
+	2750 4000 2750 4550
+Wire Wire Line
+	1850 4650 2650 4650
+Wire Wire Line
+	1850 4550 2750 4550
+Wire Wire Line
+	2550 4000 2550 4750
+$Comp
+L Device:R R?
+U 1 1 61390984
+P 1750 3800
+F 0 "R?" H 1820 3846 50  0000 L CNN
+F 1 "1k" H 1820 3755 50  0000 L CNN
+F 2 "" V 1680 3800 50  0001 C CNN
+F 3 "~" H 1750 3800 50  0001 C CNN
+	1    1750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 3950 1750 4100
+Wire Wire Line
+	1750 4100 2450 4100
+Wire Wire Line
+	2450 4100 2450 4850
+Wire Wire Line
+	1750 3650 1750 3550
+Text Label 1750 3550 1    50   ~ 0
+P_LVDS_VCC_3V3
+Text Label 5650 10500 0    50   ~ 0
+LVDS_EN
+$Comp
+L Device:R R?
+U 1 1 6140B78C
+P 5650 10200
+F 0 "R?" H 5720 10246 50  0000 L CNN
+F 1 "1k" H 5720 10155 50  0000 L CNN
+F 2 "" V 5580 10200 50  0001 C CNN
+F 3 "~" H 5650 10200 50  0001 C CNN
+	1    5650 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 9900 5650 10050
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6140B794
+P 5650 10600
+F 0 "TP?" H 5592 10626 50  0000 R CNN
+F 1 "TestPoint" H 5592 10717 50  0000 R CNN
+F 2 "" H 5850 10600 50  0001 C CNN
+F 3 "~" H 5850 10600 50  0001 C CNN
+	1    5650 10600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 10350 5650 10600
+Text Label 5650 9900 2    50   ~ 0
+P_LVDS_VCC_3V3
+$Comp
+L Switch:SW_DIP_x05 SW?
+U 1 1 6142CB62
+P 1550 4750
+F 0 "SW?" H 1550 5217 50  0000 C CNN
+F 1 "SW_DIP_x05" H 1550 5126 50  0000 C CNN
+F 2 "" H 1550 4750 50  0001 C CNN
+F 3 "~" H 1550 4750 50  0001 C CNN
+	1    1550 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 4950 2050 4950
+Wire Wire Line
+	2050 4950 2050 5100
+Text HLabel 2050 5100 3    50   Output ~ 0
+DO_LVDS_EDID
+Wire Wire Line
+	1250 4550 1200 4550
+Wire Wire Line
+	1200 4550 1200 4650
+$Comp
+L power:GNDD #PWR?
+U 1 1 6155366D
+P 1200 5100
+F 0 "#PWR?" H 1200 4850 50  0001 C CNN
+F 1 "GNDD" H 1204 4945 50  0000 C CNN
+F 2 "" H 1200 5100 50  0001 C CNN
+F 3 "" H 1200 5100 50  0001 C CNN
+	1    1200 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4950 1200 4950
+Connection ~ 1200 4950
+Wire Wire Line
+	1200 4950 1200 5100
+Wire Wire Line
+	1250 4850 1200 4850
+Connection ~ 1200 4850
+Wire Wire Line
+	1200 4850 1200 4950
+Wire Wire Line
+	1250 4750 1200 4750
+Connection ~ 1200 4750
+Wire Wire Line
+	1200 4750 1200 4850
+Wire Wire Line
+	1250 4650 1200 4650
 Wire Bus Line
 	4450 1200 4450 3450
 Wire Bus Line
 	11450 1200 11450 2750
+Connection ~ 1200 4650
+Wire Wire Line
+	1200 4650 1200 4750
 $EndSCHEMATC

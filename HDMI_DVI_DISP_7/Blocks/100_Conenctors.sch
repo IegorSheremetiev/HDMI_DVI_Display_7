@@ -269,8 +269,6 @@ F 3 "" H 1750 8800 50  0001 C CNN
 	4    1750 8800
 	1    0    0    -1  
 $EndComp
-Text Label 5350 8350 0    50   ~ 0
-EN_MATRIX_EDID
 Text Label 2050 2250 0    50   ~ 0
 DIO_TMDS_EDID_DAT
 Text Label 2050 2350 0    50   ~ 0
@@ -927,7 +925,7 @@ Wire Wire Line
 	3400 4150 3400 4100
 Wire Bus Line
 	4650 2550 5200 2550
-Text HLabel 5200 2550 2    50   Input ~ 0
+Text HLabel 5200 2550 2    50   Output ~ 0
 DI_TMDS_[0..7]
 Entry Wire Line
 	4550 2750 4650 2850
@@ -1248,8 +1246,20 @@ Wire Wire Line
 	2000 6050 2000 5850
 Wire Wire Line
 	2000 5850 2150 5850
+Text HLabel 2150 5850 2    50   Output ~ 0
+P_TMDS_5V
 Wire Bus Line
 	4650 2550 4650 3550
-Text HLabel 2150 5850 2    50   Input ~ 0
-P_TMDS_5V
+Text Label 5650 4500 0    50   ~ 0
+DO_TMDS_HPD
+Text HLabel 5350 8350 2    50   Input ~ 0
+EN_MATRIX_EDID
+Text HLabel 15550 7000 0    50   Input ~ 0
+P_SMPS_3V3
+Text HLabel 15550 7150 0    50   Input ~ 0
+P_SMPS_5V
+Text HLabel 15550 7300 0    50   Output ~ 0
+P_VIN_19V5
+Text HLabel 15200 1950 0    50   Input ~ 0
+DO_LVDS_[0..9]
 $EndSCHEMATC
