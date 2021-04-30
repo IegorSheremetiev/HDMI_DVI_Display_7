@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Yehor_Lib:TPS54286 U402
+L Yehor_Lib:TPS54286 U401
 U 1 1 607FDF37
 P 6050 3750
-F 0 "U402" H 6050 4275 50  0000 C CNN
+F 0 "U401" H 6050 4275 50  0000 C CNN
 F 1 "TPS54286" H 6050 4184 50  0000 C CNN
 F 2 "Yehor_lib:HTSSOP-5.0x4.4-14x0.65-EP" H 6050 4275 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps54283.pdf?ts=1618941058887" H 6050 4184 50  0001 C CNN
@@ -1056,7 +1056,7 @@ Wire Wire Line
 Wire Wire Line
 	7700 1650 7700 1700
 Wire Wire Line
-	8800 1650 8800 1750
+	8800 1650 8800 1700
 Text Label 10750 3650 0    50   ~ 0
 P_SMPS_5V
 Text Label 8800 950  0    50   ~ 0
@@ -1094,7 +1094,7 @@ $EndComp
 Wire Wire Line
 	9950 1350 9950 950 
 Wire Wire Line
-	9950 1650 9950 1750
+	9950 1650 9950 1700
 Wire Wire Line
 	9950 2050 9950 2100
 Text Label 9950 950  0    50   ~ 0
@@ -1239,8 +1239,6 @@ F 3 "~" H 9300 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9300 1750 9300 1700
-Wire Wire Line
-	9300 1700 8800 1700
 $Comp
 L power:GNDD #PWR0417
 U 1 1 60F56E45
@@ -1267,8 +1265,6 @@ F 3 "~" H 10450 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10450 1750 10450 1700
-Wire Wire Line
-	10450 1700 9950 1700
 $Comp
 L power:GNDD #PWR0418
 U 1 1 60F5E310
@@ -1304,4 +1300,14 @@ F 3 "~" H 9950 1900 50  0001 C CNN
 	1    9950 1900
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	10450 1700 9950 1700
+Connection ~ 9950 1700
+Wire Wire Line
+	9950 1700 9950 1750
+Wire Wire Line
+	9300 1700 8800 1700
+Connection ~ 8800 1700
+Wire Wire Line
+	8800 1700 8800 1750
 $EndSCHEMATC

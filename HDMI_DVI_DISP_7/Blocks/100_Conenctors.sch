@@ -170,7 +170,7 @@ P 4600 6700
 F 0 "U201" V 4554 6805 50  0000 L CNN
 F 1 "ADG633YCP" V 4645 6805 50  0000 L CNN
 F 2 "Package_CSP:LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm" H 4600 6700 50  0001 C CNN
-F 3 "" H 4600 6700 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.pdf" H 4600 6700 50  0001 C CNN
 	3    4600 6700
 	0    1    1    0   
 $EndComp
@@ -187,7 +187,7 @@ P 1750 8800
 F 0 "U201" V 1750 8949 50  0000 C CNN
 F 1 "ADG633YCP" V 1650 9100 50  0000 C CNN
 F 2 "Package_CSP:LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm" H 1750 8800 50  0001 C CNN
-F 3 "" H 1750 8800 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.pdf" H 1750 8800 50  0001 C CNN
 	4    1750 8800
 	1    0    0    -1  
 $EndComp
@@ -210,7 +210,7 @@ P 4150 9250
 F 0 "U201" H 4150 9399 50  0000 C CNN
 F 1 "ADG633YCP" H 4150 9490 50  0000 C CNN
 F 2 "Package_CSP:LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm" H 4150 9250 50  0001 C CNN
-F 3 "" H 4150 9250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.pdf" H 4150 9250 50  0001 C CNN
 	2    4150 9250
 	-1   0    0    1   
 $EndComp
@@ -255,7 +255,7 @@ P 4600 7650
 F 0 "U201" V 4600 7750 50  0000 L CNN
 F 1 "ADG633YCP" V 4500 7750 50  0000 L CNN
 F 2 "Package_CSP:LFCSP-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm" H 4600 7650 50  0001 C CNN
-F 3 "" H 4600 7650 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADG633.pdf" H 4600 7650 50  0001 C CNN
 	1    4600 7650
 	0    1    -1   0   
 $EndComp
@@ -911,44 +911,20 @@ F 3 "" H 3400 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 4150 3400 4100
-Wire Bus Line
-	4650 2550 5200 2550
-Text HLabel 5200 2550 2    50   Output ~ 0
-DI_TMDS_[0..7]
-Entry Wire Line
-	4550 2750 4650 2850
-Entry Wire Line
-	4550 2850 4650 2950
-Entry Wire Line
-	4550 2950 4650 3050
-Entry Wire Line
-	4550 3050 4650 3150
-Entry Wire Line
-	4550 3150 4650 3250
-Entry Wire Line
-	4550 3250 4650 3350
-Entry Wire Line
-	4550 3350 4650 3450
-Entry Wire Line
-	4550 3450 4650 3550
-Text Label 4650 2550 0    50   ~ 0
-DI_TMDS_[0..7]
-Text Label 4500 2750 2    50   ~ 0
-DI_TMDS_0
 Text Label 4500 2850 2    50   ~ 0
-DI_TMDS_1
+DI_TMDS_CLK+
 Text Label 4500 2950 2    50   ~ 0
-DI_TMDS_2
+DI_TMDS_D0-
 Text Label 4500 3050 2    50   ~ 0
-DI_TMDS_3
+DI_TMDS_D0+
 Text Label 4500 3150 2    50   ~ 0
-DI_TMDS_4
+DI_TMDS_D1-
 Text Label 4500 3250 2    50   ~ 0
-DI_TMDS_5
+DI_TMDS_D1+
 Text Label 4500 3350 2    50   ~ 0
-DI_TMDS_6
+DI_TMDS_D2-
 Text Label 4500 3450 2    50   ~ 0
-DI_TMDS_7
+DI_TMDS_D2+
 Wire Wire Line
 	1950 2750 3200 2750
 Wire Wire Line
@@ -1247,8 +1223,6 @@ Text HLabel 13300 3800 0    50   Input ~ 0
 P_SMPS_5V
 Text HLabel 11250 7500 2    50   Output ~ 0
 P_VIN_19V5
-Text HLabel 12600 1550 0    50   Input ~ 0
-DO_LVDS_[0..9]
 $Comp
 L power:GNDD #PWR0218
 U 1 1 6088A1FC
@@ -1400,62 +1374,6 @@ Text Label 14500 1500 2    50   ~ 0
 DI_LVDS_EDID_CLK
 Text Label 14500 1600 2    50   ~ 0
 DIO_LVDS_EDID_DAT
-Wire Bus Line
-	13350 1550 12600 1550
-Entry Wire Line
-	13350 1600 13450 1700
-Entry Wire Line
-	13350 1700 13450 1800
-Entry Wire Line
-	13350 1900 13450 2000
-Entry Wire Line
-	13350 2000 13450 2100
-Entry Wire Line
-	13350 2200 13450 2300
-Entry Wire Line
-	13350 2300 13450 2400
-Entry Wire Line
-	13350 2500 13450 2600
-Entry Wire Line
-	13350 2600 13450 2700
-Wire Wire Line
-	13450 1700 14800 1700
-Wire Wire Line
-	13450 1800 14800 1800
-Wire Wire Line
-	13450 2000 14800 2000
-Wire Wire Line
-	13450 2100 14800 2100
-Wire Wire Line
-	13450 2300 14800 2300
-Wire Wire Line
-	13450 2400 14800 2400
-Wire Wire Line
-	13450 2600 14800 2600
-Wire Wire Line
-	13450 2700 14800 2700
-Text Label 12700 1550 0    50   ~ 0
-DO_LVDS_[0..9]
-Text Label 13500 1700 0    50   ~ 0
-DO_LVDS_0
-Text Label 13500 1800 0    50   ~ 0
-DO_LVDS_1
-Text Label 13500 2000 0    50   ~ 0
-DO_LVDS_2
-Text Label 13500 2100 0    50   ~ 0
-DO_LVDS_3
-Text Label 13500 2300 0    50   ~ 0
-DO_LVDS_4
-Text Label 13500 2400 0    50   ~ 0
-DO_LVDS_5
-Text Label 13500 2900 0    50   ~ 0
-DO_LVDS_6
-Text Label 13500 3000 0    50   ~ 0
-DO_LVDS_7
-Text Label 13500 2600 0    50   ~ 0
-DO_LVDS_8
-Text Label 13500 2700 0    50   ~ 0
-DO_LVDS_9
 Text Notes 14700 1700 2    50   ~ 0
 RxIN0-
 Text Notes 14700 1800 2    50   ~ 0
@@ -1472,14 +1390,6 @@ Text Notes 14700 2600 2    50   ~ 0
 RxCLKIN-
 Text Notes 14700 2700 2    50   ~ 0
 RxCLKIN+
-Entry Wire Line
-	13350 2800 13450 2900
-Entry Wire Line
-	13350 2900 13450 3000
-Wire Wire Line
-	13450 3000 14000 3000
-Wire Wire Line
-	13450 2900 14000 2900
 NoConn ~ 14000 2900
 NoConn ~ 14000 3000
 Wire Wire Line
@@ -1610,8 +1520,82 @@ Text Label 5100 4200 0    50   ~ 0
 P_TMDS_5V
 Wire Wire Line
 	5100 4200 5100 4300
-Wire Bus Line
-	13350 1550 13350 2900
-Wire Bus Line
-	4650 2550 4650 3550
+Text Label 4500 2750 2    50   ~ 0
+DI_TMDS_CLK-
+Text HLabel 4550 2750 2    50   Output ~ 0
+DI_TMDS_CLK-
+Text HLabel 4550 2850 2    50   Output ~ 0
+DI_TMDS_CLK+
+Text HLabel 4550 2950 2    50   Output ~ 0
+DI_TMDS_D0-
+Text HLabel 4550 3050 2    50   Output ~ 0
+DI_TMDS_D0+
+Text HLabel 4550 3150 2    50   Output ~ 0
+DI_TMDS_D1-
+Text HLabel 4550 3250 2    50   Output ~ 0
+DI_TMDS_D1+
+Text HLabel 4550 3350 2    50   Output ~ 0
+DI_TMDS_D2-
+Text HLabel 4550 3450 2    50   Output ~ 0
+DI_TMDS_D2+
+Text Label 13400 1700 2    50   ~ 0
+DO_LVDS_D0-
+Text Label 13400 1800 2    50   ~ 0
+DO_LVDS_D0+
+Text Label 13400 2000 2    50   ~ 0
+DO_LVDS_D1-
+Text Label 13400 2100 2    50   ~ 0
+DO_LVDS_D1+
+Text Label 13400 2300 2    50   ~ 0
+DO_LVDS_D2-
+Text Label 13400 2400 2    50   ~ 0
+DO_LVDS_D2+
+Text Label 13400 2900 2    50   ~ 0
+DO_LVDS_D3-
+Text Label 13400 3000 2    50   ~ 0
+DO_LVDS_D3+
+Text Label 13400 2600 2    50   ~ 0
+DO_LVDS_CLK-
+Text Label 13400 2700 2    50   ~ 0
+DO_LVDS_CLK+
+Text HLabel 12500 1800 0    50   Input ~ 0
+DO_LVDS_D0+
+Text HLabel 12500 2100 0    50   Input ~ 0
+DO_LVDS_D1+
+Text HLabel 12500 2000 0    50   Input ~ 0
+DO_LVDS_D1-
+Text HLabel 12500 2400 0    50   Input ~ 0
+DO_LVDS_D2+
+Text HLabel 12500 2900 0    50   Input ~ 0
+DO_LVDS_D3-
+Text HLabel 12500 2300 0    50   Input ~ 0
+DO_LVDS_D2-
+Text HLabel 12500 3000 0    50   Input ~ 0
+DO_LVDS_D3+
+Text HLabel 12500 2600 0    50   Input ~ 0
+DO_LVDS_CLK-
+Text HLabel 12500 2700 0    50   Input ~ 0
+DO_LVDS_CLK+
+Wire Wire Line
+	12500 1700 14800 1700
+Wire Wire Line
+	12500 1800 14800 1800
+Wire Wire Line
+	12500 2000 14800 2000
+Wire Wire Line
+	12500 2100 14800 2100
+Wire Wire Line
+	12500 2300 14800 2300
+Wire Wire Line
+	12500 2400 14800 2400
+Wire Wire Line
+	12500 2600 14800 2600
+Wire Wire Line
+	12500 2700 14800 2700
+Wire Wire Line
+	12500 2900 14000 2900
+Wire Wire Line
+	12500 3000 14000 3000
+Text HLabel 12500 1700 0    50   Input ~ 0
+DO_LVDS_D0-
 $EndSCHEMATC
