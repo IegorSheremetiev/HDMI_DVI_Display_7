@@ -2067,4 +2067,86 @@ Text HLabel 11350 2650 2    50   Output ~ 0
 DO_LVDS_CLK+
 Wire Wire Line
 	9850 10350 10300 10350
+$Comp
+L Device:C C317
+U 1 1 6092B64A
+P 9400 9550
+F 0 "C317" H 9515 9596 50  0000 L CNN
+F 1 "68n" H 9515 9505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9438 9400 50  0001 C CNN
+F 3 "~" H 9400 9550 50  0001 C CNN
+	1    9400 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0103
+U 1 1 6092BAB2
+P 9400 9750
+F 0 "#PWR0103" H 9400 9500 50  0001 C CNN
+F 1 "GNDD" H 9404 9595 50  0000 C CNN
+F 2 "" H 9400 9750 50  0001 C CNN
+F 3 "" H 9400 9750 50  0001 C CNN
+	1    9400 9750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 9750 9400 9700
+Wire Wire Line
+	9400 9400 9400 9350
+Text Label 7850 1300 0    50   ~ 0
+QE0
+Text Label 7850 1450 0    50   ~ 0
+QE1
+Text Label 7850 1600 0    50   ~ 0
+QE2
+Text Label 7850 1750 0    50   ~ 0
+QE3
+Text Label 7850 1900 0    50   ~ 0
+QE4
+Text Label 7850 2050 0    50   ~ 0
+QE5
+Text Label 7850 2200 0    50   ~ 0
+QE6
+Text Label 7850 2350 0    50   ~ 0
+QE7
+Text Label 7850 2500 0    50   ~ 0
+QE8
+Text Label 7850 2650 0    50   ~ 0
+QE9
+Text Label 7850 2800 0    50   ~ 0
+QE10
+Text Label 7850 2950 0    50   ~ 0
+QE11
+Text Label 7850 3100 0    50   ~ 0
+QE12
+Text Label 7850 3250 0    50   ~ 0
+QE13
+Text Label 7850 3400 0    50   ~ 0
+QE14
+Text Label 7850 3550 0    50   ~ 0
+QE15
+Text Label 7850 3700 0    50   ~ 0
+QE16
+Text Label 7850 3850 0    50   ~ 0
+QE17
+Text Label 7850 4000 0    50   ~ 0
+QE18
+Text Label 7850 4150 0    50   ~ 0
+QE19
+Text Label 7850 4300 0    50   ~ 0
+QE20
+Text Label 7850 4450 0    50   ~ 0
+QE21
+Text Label 7850 4600 0    50   ~ 0
+QE22
+Text Label 7850 4750 0    50   ~ 0
+QE23
+Text Label 7850 4900 0    50   ~ 0
+HSYNC
+Text Label 7850 5050 0    50   ~ 0
+VSYNC
+Text Label 7850 5200 0    50   ~ 0
+DE
+Text Label 7850 5350 0    50   ~ 0
+ODCK
 $EndSCHEMATC
